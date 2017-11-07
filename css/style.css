@@ -1,0 +1,151 @@
+body{
+	height:100%;
+	overflow: hidden;
+
+}
+.container{
+	width:100%;
+	height:100vh;
+	background:url(../img/184424.jpg) no-repeat center center;
+	background-size:cover;
+	position: relative;
+}
+aside{
+	width:100%;
+	position: absolute;
+	top:40px;
+	left:0;
+}
+aside ul li{
+	width:100%;
+	margin-bottom: 10px;
+}
+aside ul li h1{
+	width:300px;
+	height:40px;
+	margin:0 auto;
+	background:rgba(189,183,107,.6);
+	line-height:40px;
+	text-align: center;
+	font-size:16px;
+	color:#fff;
+}
+aside ul li .son{
+	width:100%;
+	height:60vh;
+	background:rgba(189,183,107,.6);
+	display: none;
+}
+.show{
+	display: block!important;
+}
+.active{
+	background:rgba(189,183,107,.8)!important;
+}
+aside ul li:nth-child(1) .son .bg{
+	width: 600px;
+	padding:100px;
+	margin:0 auto;
+	height:60vh;
+	text-align: center;
+	font-size:50px;
+	background:rgba(189,183,107,.8);
+	color:#fff;
+}
+aside ul li:nth-child(2) div{
+	padding:100px 300px;
+}
+aside ul li:nth-child(2) div .one{
+	width:250px;
+	text-align: center;
+	border-right: 5px solid rgba(189,183,107,.8);
+	float:left;
+}
+aside ul li:nth-child(2) div .one li{
+	width:200px;
+	height:32px;
+	line-height: 32px;
+	font-size:16px;
+	color:#fff;
+	background:rgba(189,183,107,.8);
+	margin-bottom:40px;
+}
+aside ul li:nth-child(2) div .one li:nth-child(1){
+	background:none;
+}
+aside ul li:nth-child(2) div .two{
+	float:left;
+	width:580px;
+	padding-left:40px;
+}
+aside ul li:nth-child(2) div .two li:nth-child(1){
+	width:200px;
+	height:32px;
+	line-height: 32px;
+	font-size:16px;
+	color:#fff;
+	text-align: center;
+	background:rgba(189,183,107,.8);
+	margin-bottom:30px;
+}
+aside ul li:nth-child(2) div .two li:nth-child(2){
+	background:rgba(189,183,107,.8);
+	font-size:16px;
+	line-height:32px;
+	color:#fff;
+	padding:20px;
+	text-indent: 28px;
+}
+aside ul li:nth-child(3) .son ul{
+	width: 600px;
+	padding:70px 100px;
+	height:60vh;
+	margin:0 auto;
+	background:rgba(189,183,107,.8);
+}
+aside ul li:nth-child(3) .son ul li{
+	font-size:14px;
+	line-height: 20px;
+	margin-bottom:20px;
+	color:#fff;
+}
+aside ul li:nth-child(5) .son .bg{
+	width: 600px;
+	padding:150px;
+	margin:0 auto;
+	height:60vh;
+	text-align: center;
+	font-size:20px;
+	line-height: 32px;
+	background:rgba(189,183,107,.8);
+	color:#fff;
+}
+aside ul li:nth-child(4) .son{
+	padding-top:20px;
+}
+.ss2_wrapper { position:relative; width:900px; height:400px; margin:0 auto; overflow:hidden; }
+.ss2_wrapper .slideshow { position:relative; width:900px; height:400px; }
+	
+	.ss2_wrapper .slideshow_item { width:900px; height:400px; }
+	.ss2_wrapper .slideshow_item .data { display:none; }	
+	
+	.ss2_wrapper a.slideshow_prev { position:absolute; left:-40px; top:160px; z-index:10; width:40px; height:46px; outline:none; background:url(trans-black-70.png); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;   }
+		.ss2_wrapper a.slideshow_prev:hover { background:rgba(189,183,107,.8);; }
+		.ss2_wrapper a.slideshow_prev span { display:block; width:40px; height:46px; background:url(../img/arrows.png) no-repeat -55px 50%; text-indent:-9999px; }
+		
+	.ss2_wrapper a.slideshow_next { position:absolute; right:-40px; top:160px; z-index:10; width:40px; height:46px; outline:none; background:url(trans-black-70.png); -moz-border-radius: 4px;   }
+		.ss2_wrapper a.slideshow_next:hover { background:rgba(189,183,107,.8); }
+		.ss2_wrapper a.slideshow_next span { display:block; width:40px; height:46px; background:url(../img/arrows.png) no-repeat -5px 50%; text-indent:-9999px; }
+	
+	.ss2_wrapper .slideshow_paging { position:absolute; top:10px; right:10px; z-index:11; font-size:12px; padding:3px 2px; background:url(trans-black-70.png); -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;  }
+		.ss2_wrapper .slideshow_paging a { display:block; float:left; margin:0 1px; padding:3px 7px; color:#ccc; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
+			.ss2_wrapper .slideshow_paging a:hover { color:#fff }
+			.ss2_wrapper .slideshow_paging a.activeSlide { 	background:rgba(189,183,107,.8); color:#fff }
+	
+	.ss2_wrapper .slideshow_box { position:absolute; left:0; bottom:0; background:url(trans-black-70.png); width:100%; height:110px; z-index:10;  }
+		.ss2_wrapper .slideshow_box .data { padding:15px 20px; color:#ccc; background:rgba(189,183,107,.8);}
+		.ss2_wrapper .slideshow_box .data h4 { color:#fff; font:bold 20px arial, sans-serif; padding:0; margin:0 0 10px 0; }
+		.ss2_wrapper .slideshow_box .data a { color:#fff; }
+		
+		
+		

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.js"></script>
+
+<script src="js/jquery.cycle.all.js"></script>
+
+
+
+<script src="js/jquery.easing.1.3.js"></script>
+
+
+	</head>
+
+	<body>
+		<div class="container clearfix">
+			<aside>
+				<ul>
+					<li class="same">
+						<h1 class="active">首页</h1>
+						<div class="son show">
+							<div class="bg">
+								Welcome <br /> to my <br /> personal homepage!
+							</div>
+						</div>
+					</li>
+					<li class="same">
+						<h1>关于我</h1>
+						<div class="son clearfix">
+							<ul class="one">
+								<li>信息</li>
+								<li>Name:张鑫</li>
+								<li>Sex:男</li>
+								<li>Job:前端工程师</h1>
+								</li>
+							</ul>
+							<ul class="two">
+								<li>优点</li>
+								<li>
+									本人热爱前端编程工作，吃苦耐劳，有强烈的自我驱动力，对工作积极主动，参与过多个项目的开发，熟悉常见业务处理，能快速融入团队； 学习能力强，思路清晰，对细节难题具备快速钻研解决能力； 为人低调谦和，易与人相处，善于人沟通，能积极配合公司发扬团队合作精神为公司创造效益。
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="same">
+						<h1>技能掌握</h1>
+						<div class="son">
+							<ul>
+								<li>1. 深刻理解w3c规范与web标准，熟悉各大主流浏览器的兼容性差异，熟练解决相关兼容性问题，对h5应用中的“渐进增强，优雅降级”有深刻的了解。</li>
+								<li>2. 熟练掌握Html5+Css3,熟练运用PhotoShop切图，优质完成网页前端架构，并可利用H5完成原生的响应式网站开发，保证网站在PC端，iPad以及手机上正常运行无Bug。</li>
+								<li>3. 熟练掌握JavaScript语言，熟练开发网站常用特效，熟悉ECMAScript编码规范，熟知DOM和BOM特性，并灵活使用，对封装、继承、闭包以及代码执行率、模块化编程有一定的认知。</li>
+								<li>4. 熟练运用Bootstrap开发响应式网站（web app），灵活解决相关问题。</li>
+								<li>5. 熟练运用jQuery框架来完成网站的相关交互开发。
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="same">
+						<h1>项目屋</h1>
+						<div class="son">
+							<div class="ss2_wrapper">
+
+								<a href="#" class="slideshow_prev"><span>Previous</span></a>
+
+								<a href="#" class="slideshow_next"><span>Next</span></a>
+
+								<div class="slideshow_paging"></div>
+
+								<div class="slideshow_box">
+
+									<div class="data"></div>
+
+								</div>
+
+								<div id="slideshow_2" class="slideshow">
+									<div class="slideshow_item">
+
+										<div class="image">
+											<a href="http://www.newhopegroup.com/"><img src="img/xxw.jpg" alt="photo 1" width="900" height="400" /></a>
+										</div>
+
+										<div class="data">
+
+											<h4><a href="http://www.newhopegroup.com/">新希望集团</a></h4>
+
+											
+
+										</div>
+
+									</div>
+									
+
+									<div class="slideshow_item">
+
+										<div class="image">
+											<a href="http://www.91elian.com"><img src="img/yl.jpg" alt="photo 3" width="900" height="400" /></a>
+										</div>
+
+										<div class="data">
+
+											<h4><a href="http://www.91elian.com/">驿联APP</a></h4>
+
+											
+
+										</div>
+
+									</div>
+
+									<div class="slideshow_item">
+
+										<div class="image">
+											<a href="http://www.zgcxueyuan.com/"><img src="img/jx2.jpg" alt="photo 2" width="900" height="400" /></a>
+										</div>
+
+										<div class="data">
+
+											<h4><a href="http://www.zgcxueyuan.com/">景秀教育官网</a></h4>
+
+											
+
+										</div>
+
+									</div>
+
+									<div class="slideshow_item">
+
+										<div class="image">
+											<a href="https://qlskyblue.github.io/QLskyblue/Apparels/index.html"><img src="img/ty.jpg" alt="photo 4" width="900" height="400" /></a>
+										</div>
+
+										<div class="data">
+
+											<h4><a href="https://qlskyblue.github.io/QLskyblue/Apparels/index.html">天伊</a></h4>
+
+											
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+							<!-- .ss2_wrapper -->
+
+						</div>
+					</li>
+					<li class="same">
+						<h1>联系我</h1>
+						<div class="son">
+							<div class="bg">
+								电话:15011247941 <br /> QQ:2670254081 <br /> 微信：zx2670254081 <br /> 邮箱：2670254081@qq.com <br /> 地址：北京海淀16号地铁线周边''
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</aside>
+		</div>
+		<script type="text/javascript">
+			$('.same h1').click(function() {
+				$(this).addClass('active').siblings('.son').addClass('show').parent().siblings().children('.son').removeClass('show').siblings('h1').removeClass('active');
+			});
+			$('#slideshow_2').cycle({
+
+				fx: 'fade',
+
+				speed: 900,
+
+				timeout: 5000,
+
+				pager: '.ss2_wrapper .slideshow_paging',
+
+				prev: '.ss2_wrapper .slideshow_prev',
+
+				next: '.ss2_wrapper .slideshow_next',
+
+				before: function(currSlideElement, nextSlideElement) {
+
+					var data = $('.data', $(nextSlideElement)).html();
+
+					$('.ss2_wrapper .slideshow_box').stop(true, true).animate({
+						bottom: '-110px'
+					}, 400, function() {
+
+						$('.ss2_wrapper .slideshow_box .data').html(data);
+
+					});
+
+					$('.ss2_wrapper .slideshow_box').delay(100).animate({
+						bottom: '0'
+					}, 400);
+
+				}
+
+			});
+
+			$('.ss2_wrapper').mouseenter(function() {
+
+				$('#slideshow_2').cycle('pause');
+
+				$('.ss2_wrapper .slideshow_prev').stop(true, true).animate({
+					left: '20px'
+				}, 200);
+
+				$('.ss2_wrapper .slideshow_next').stop(true, true).animate({
+					right: '20px'
+				}, 200);
+
+			}).mouseleave(function() {
+
+				$('#slideshow_2').cycle('resume');
+
+				$('.ss2_wrapper .slideshow_prev').stop(true, true).animate({
+					left: '-40px'
+				}, 200);
+
+				$('.ss2_wrapper .slideshow_next').stop(true, true).animate({
+					right: '-40px'
+				}, 200);
+
+			});
+		</script>
+	</body>
+
+</html>
